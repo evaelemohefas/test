@@ -1,19 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>evaelemohefas</title>
-	</head>
-	<body>
-		<div>
-			<div>scheme hker-barcode-scanner</div>
-			<a href="hker-barcode-scanner://scan">Open app</a>
-		</div>
-		<br />
-		<div>
-			<div>https /</div>
-			<a href="https://hker-barcode-scanner.github.io">Open app</a>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- needs to be right at the top to prevent Chrome from reloading favicon on every route change -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <title>安心出行</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#12b188"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+    <!-- app icon for ios -->
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon-180x180.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/apple-touch-icon-167x167.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.png"/>
+
+    <!-- portrait splash screen for ios -->
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-2048x2732.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1668x2388.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1536x2048.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1668x2224.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1620x2160.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1242x2688.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1125x2436.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-828x1792.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-1242x2208.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-750x1334.jpg"/>
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/splash/apple-splash-portrait-640x1136.jpg"/>
+  <link rel="stylesheet" href="styles.css"></head>
+  <body>
+    <!--[if lt IE 10]>
+      <p>
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <noscript>
+      <p>This page requires JavaScript to work properly. Please enable JavaScript in your browser.</p>
+    </noscript>
+    <app-root></app-root>
+  <script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
 </html>
